@@ -120,7 +120,7 @@ def _sample_mask(sp, seg, mask_alpha, mask_beta,
     About `mask_beta` tokens are chosen in a context of `mask_alpha` tokens."""
 
     seg_len = len(seg)
-    mask = np.array([False] * seg_len, dtype=np.bool)
+    mask = np.array([False] * seg_len, dtype=np.uint8)
 
     num_predict = 0
 
